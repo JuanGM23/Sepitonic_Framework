@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags for character set and viewport -->
+  <meta charset="UTF-8" />
+  <meta name="description" content="FRAMEWORK CSS" />
+  <meta name="keywords" content="FRAMEWORK CSS Desarrollo De Aplicaciones Web" />
+  <meta name="language" content="ES" />
+  <meta name="author" content="juanjose.gavilan@a.vedrunasevillasj.es" />
+  <meta name="robots" content="index,follow" />
+  <meta name="revised" content="Monday, November 13th, 2023, 08:30am" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1" />
+
+  <!-- Link to the external image icon -->
+  <link rel="icon" href="img/th.jpeg" />
+
+  <!-- Link to the external stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Defer the execution of the main.js script -->
+  <script src="js/main.js" defer></script>
+
+  <!-- Include jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <!-- Title of the document -->
+  <title>Sepitonic Framework</title>
+</head>
+
+<body>
+  <!-- Page header -->
+  <header>
+    <h1>Sepitonic Framework</h1>
+
+    <!-- Navigation menu -->
+    <nav>
+      <ul class="menu">
+        <li><a href="#reset">Reset</a></li>
+        <li><a href="#themes">Themes</a></li>
+        <li><a href="#positioning">Positioning</a></li>
+        <li><a href="#cards">Cards</a></li>
+        <li><a href="#header-footer">Header & Footer</a></li>
+        <li><a href="#menus">Menus</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#transitions-animations">Transitions & Animations</a></li>
+        <li><a href="#download">Download</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Section: Reset -->
+  <section id="reset" class="section">
+    <h2>Reset</h2>
+    <p>Reset styles for all elements.</p>
+
+    <!-- Button to toggle code visibility -->
+    <button data-section-id="reset" class="toggle-code-button">Toggle Code</button>
+
+    <!-- Code block for reset styles -->
+    <pre id="reset-code" class="code-block"><code class="language-css">
+      /* Reset Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </code></pre>
+  </section>
+
+  <!-- Section: Themes -->
+  <section id="themes" class="section">
+    <h2>Themes</h2>
+    <p>Customize the look and feel of your site with this theme classes.</p>
+
+    <!-- Example of theme usage -->
+    <div class="example theme-example">
+      <p>Example of theme usage...</p>
+
+      <!-- Button to toggle code visibility -->
+      <button data-section-id="themes-example-1" class="toggle-code-button">Toggle Code</button>
+
+      <!-- Code block for themes -->
+      <pre id="themes-example-1-code" class="code-block"><code class="language-css">
+        /* Themes */
+        body {
+          font-family: 'Roboto', sans-serif;
+          font-size: 16px;
+          line-height: 1.6;
+          color: #333;
+          background-color: #f8f8f8;
+        }
+
+        a {
+          color: #3498db;
+          text-decoration: none;
+          transition: color 0.3s ease;
+        }
+
+        a:hover {
+          color: #e74c3c;
+        }
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Section: Positioning -->
+  <section id="positioning" class="section">
+    <h2>Positioning</h2>
+    <p>Customize the vertical and horizontal positioning of your elements.</p>
+
+    <!-- Vertical centering example -->
+    <div class="example positioning-example">
+      <p>Vertical and Horizontal centering example...</p>
+
+      <!-- Button to toggle code visibility -->
+      <button data-section-id="positioning-example-1" class="toggle-code-button">Toggle Code</button>
+
+      <!-- Code block for vertical positioning -->
+      <pre id="positioning-example-1-code" class="code-block"><code class="language-css">
+        /* Vertical and Horizontal Positioning */
+        .vertical-center {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+        }
+        .horizontal-center {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100vw;
+      }
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Section: Cards -->
+  <section id="cards" class="section">
+    <h2>Cards</h2>
+    <p>Create stylish cards for your content.</p>
+
+    <!-- Card example -->
+    <div class="example cards-example">
+      <p>Card example...</p>
+
+      <!-- Button to toggle code visibility -->
+      <button data-section-id="cards-example-1" class="toggle-code-button">Toggle Code</button>
+
+      <!-- Code block for cards -->
+      <pre id="cards-example-1-code" class="code-block"><code class="language-css">
+        /* Cards */
+        .card {
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          padding: 20px;
+          margin-bottom: 20px;
+          background-color: #fff;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+          transform: scale(1.05);
+        }
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Section: Header & Footer -->
+  <section id="header-footer" class="section">
+    <h2>Header & Footer</h2>
+    <p>Style your page header and footer with ease.</p>
+
+    <!-- Header example -->
+    <div class="example header-footer-example">
+      <p>Header example...</p>
+
+      <!-- Button to toggle code visibility -->
+      <button data-section-id="header-example-1" class="toggle-code-button">Toggle Code</button>
+
+      <!-- Code block for header and footer -->
+      <pre id="header-example-1-code" class="code-block"><code class="language-css">
+        /* Header and Footer */
+        header, footer {
+          background-color: #333;
+          color: #fff;
+          padding: 20px 0;
+          text-align: center;
+        }
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Section: Menus -->
+  <section id="menus" class="section">
+    <h2>Menus</h2>
+    <p>Create stylish navigation menus for your site.</p>
+
+    <!-- Navbar example -->
+    <div class="example menus-example">
+      <p>Navbar example...</p>
+
+      <!-- Button to toggle code visibility -->
+      <button data-section-id="navbar-example-1" class="toggle-code-button">Toggle Code</button>
+
+      <!-- Code block for menus -->
+      <pre id="navbar-example-1-code" class="code-block"><code class="language-css">
+        /* Side and Horizontal Menus */
+        .navbar {
+          background-color: #3498db;
+          color: #fff;
+          padding: 10px;
+        }
+
+        .navbar ul {
+          list-style: none;
+          padding: 0;
+        }
+
+        .navbar li {
+          display: inline-block;
+          margin-right: 20px;
+        }
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Section: Articles -->
+  <section id="articles" class="section">
+    <h2>Articles</h2>
+    <p>Style your articles or blog posts for a clean look.</p>
+
+    <!-- Article example -->
+    <div class="example articles-example">
+      <p>Article example...</p>
+
+      <!-- Button to toggle code visibility -->
+      <button data-section-id="article-example-1" class="toggle-code-button">Toggle Code</button>
+
+      <!-- Code block for articles -->
+      <pre id="article-example-1-code" class="code-block"><code class="language-css">
+        /* Articles */
+        .article {
+          max-width: 800px;
+          margin: 0 auto;
+        }
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Section: Forms -->
+  <section id="forms" class="section">
+    <h2>Forms</h2>
+    <p>Style your forms with this easy-to-use form classes.</p>
+
+    <!-- Form example -->
+    <div class="example forms-example">
+      <p>Form example...</p>
+
+      <!-- Button to toggle code visibility -->
+      <button data-section-id="form-example-1" class="toggle-code-button">Toggle Code</button>
+
+      <!-- Code block for forms -->
+      <pre id="form-example-1-code" class="code-block"><code class="language-css">
+        /* Forms */
+        .form {
+          max-width: 400px;
+          margin: 0 auto;
+        }
+
+        .input-group {
+          margin-bottom: 20px;
+        }
+
+        .input-group label {
+          display: block;
+          margin-bottom: 5px;
+        }
+
+        .input-group input,
+        .input-group textarea,
+        .input-group select {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+        }
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Section: Transitions & Animations -->
+  <section id="transitions-animations" class="section">
+    <h2>Transitions & Animations</h2>
+    <p>Add smooth transitions and animations to your elements.</p>
+
+    <!-- Transition example -->
+    <div class="example transitions-animations-example">
+      <p>Transition example...</p>
+
+      <!-- Button to toggle code visibility -->
+      <button data-section-id="transition-example-1" class="toggle-code-button">Toggle Code</button>
+
+      <!-- Code block for transitions and animations -->
+      <pre id="transition-example-1-code" class="code-block"><code class="language-css">
+        /* Transitions and Animations */
+        .transition {
+          transition: all 0.3s ease;
+        }
+
+        .animation {
+          animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
+        @keyframes bounce {
+          0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+          }
+          40% {
+            transform: translateY(-30px);
+          }
+          60% {
+            transform: translateY(-15px);
+          }
+        }
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Section: Download -->
+  <section id="download" class="section">
+    <h2>Download</h2>
+    <p>Download the framework:</p>
+
+    <!-- Button to trigger the download -->
+    <a href="https://drive.google.com/file/d/16Py_dEpbsxY1qwcMCmlQIMEP_XcrutKn/view?usp=sharing.zip"
+      class="button">Download</a>
+  </section>
+
+  <!-- Page footer -->
+  <footer>
+    <p>&copy; JuanJose's Framework || 2023</p>
+  </footer>
+</body>
+
+</html>
